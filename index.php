@@ -15,10 +15,10 @@
 <body>
 	<?php 
 	//server connection details
-		$servername = "fdb28.awardspace.net";//insert the name of your server
-		$username = "3508950_timi"; //insert your mysql username
-		$password = "QnnN[n:n27H+GDQm"; //insert your password
-		$dbname = "3508950_timi"; //insert your database name
+		$servername = "us-cdbr-east-02.cleardb.com";//insert the name of your server
+		$username = "bf37e830ad899a"; //insert your mysql username
+		$password = "51a46c2e"; //insert your password
+		$dbname = "heroku_a49af135fa161b9"; //insert your database name
 
 		//establish new connection to mysql database
 		$conn = new mysqli($servername, $username, $password, $dbname);
