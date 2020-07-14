@@ -15,10 +15,10 @@
 <body>
 	<?php 
 	//server connection details
-		$servername = "localhost";//insert the name of your server
-		$username = "root"; //insert your mysql username
-		$password = "Eazytimzy22553"; //insert your password
-		$dbname = "dreamland-emails"; //insert your database name
+		$servername = "fdb28.awardspace.net";//insert the name of your server
+		$username = "3508950_timi"; //insert your mysql username
+		$password = "QnnN[n:n27H+GDQm"; //insert your password
+		$dbname = "3508950_timi"; //insert your database name
 
 		//establish new connection to mysql database
 		$conn = new mysqli($servername, $username, $password, $dbname);
@@ -36,16 +36,16 @@
 		/*uncomment this block of code if you want to create the table where the emails will be stored, don't bother if you
 		already have the table*/
 
-	// 	$table = "CREATE TABLE mails (
-	// 		id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-	// 		mails VARCHAR(100) NOT NULL
-	// )";
+	 	$table = "CREATE TABLE mails (
+			id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	 		mails VARCHAR(100) NOT NULL
+	 )";
 
-	// if($conn->query($table) == true) {
-	// 	echo "Table created";
-	// } else {
-	// 	echo "Error creating " .$conn->error;
-	// }
+	 if($conn->query($table) == true) {
+	 	echo "Table created";
+	 } else {
+	 	echo "Error creating " .$conn->error;
+	 }
 
 		//when the submit button is clicked
 		if(isset($_POST["submit"])) {
