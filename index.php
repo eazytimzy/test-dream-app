@@ -64,6 +64,13 @@
 					$sql = "INSERT INTO mails (mail) VALUES ('$email')";
 					$conn->query($sql);
 					
+					`$insert_email = $conn->query($sql);
+						if ($insert_email) {
+						"submited to databas sucessfuly"
+				}
+					else{
+					"ERROR submiting to database"
+				}`
 					//return response message
 					$responseMsg ="Thank you, we promise to reach out";
 				}
