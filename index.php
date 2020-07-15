@@ -14,11 +14,12 @@
 </head>
 <body>
 	<?php 
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	//server connection details
-		$servername = "jsftj8ez0cevjz8v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";//insert the name of your server
-		$username = "qm3gykadoio1olv2"; //insert your mysql username
-		$password = "zh1camw074n3jif0"; //insert your password
-		$dbname = "lp4mm7co742xdcep"; //insert your database name
+		$servername = "localhost";//insert the name of your server
+		$username = "id14346886_rooter"; //insert your mysql username
+		$password = ">{A4(5k&/=Jo()6L"; //insert your password
+		$dbname = "id14346886_badass"; //insert your database name
 
 		//establish new connection to mysql database
 		$conn = new mysqli($servername, $username, $password, $dbname);
@@ -36,24 +37,24 @@
 		/*uncomment this block of code if you want to create the table where the emails will be stored, don't bother if you
 		already have the table*/
 
- 	 	$table = "CREATE TABLE mails (
- 	 		id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
- 	 		mails VARCHAR(100) NOT NULL
- 	 )";
+//  	 	$table = "CREATE TABLE mails (
+//  	 		id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+//  	 		mails VARCHAR(100) NOT NULL
+//  	 )";
 
- 	 if($conn->query($table) == true) {
- 	 	echo "Table created";
- 	 } else {
- 	 	echo "Error creating " .$conn->error;
- 	}
+//  	 if($conn->query($table) == true) {
+//  	 	echo "Table created";
+//  	 } else {
+//  	 	echo "Error creating " .$conn->error;
+//  	}
 
 		//when the submit button is clicked
 		if(isset($_POST["submit"])) {
 		//if mail field is empty	
-			if(empty($_REQUEST["email"])) {
+			if(empty( $_POST["email"])) {
 				$error = "The mail field is required";
 			} else {
-				$email = test($_REQUEST["email"]);
+				$email = test( $_POST["email"]);
 
 				//checks if email is a valid address
 				if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -68,7 +69,7 @@
 				}
 			}
 		}
-
+	}
 	?>
 
 
