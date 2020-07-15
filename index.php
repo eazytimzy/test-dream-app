@@ -16,10 +16,10 @@
 	<?php 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	//server connection details
-		$servername = "localhost";//insert the name of your server
-		$username = "id14346886_rooter"; //insert your mysql username
-		$password = ">{A4(5k&/=Jo()6L"; //insert your password
-		$dbname = "id14346886_badass"; //insert your database name
+		$servername = "jsftj8ez0cevjz8v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";//insert the name of your server
+		$username = "qm3gykadoio1olv2"; //insert your mysql username
+		$password = "zh1camw074n3jif0"; //insert your password
+		$dbname = "lp4mm7co742xdcep"; //insert your database name
 
 		//establish new connection to mysql database
 		$conn = new mysqli($servername, $username, $password, $dbname);
