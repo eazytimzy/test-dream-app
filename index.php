@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Dreamland-Landing page</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -10,16 +10,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css"> -->
 </head>
 <body>
 	<?php 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	//server connection details
-		$servername = "jsftj8ez0cevjz8v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";//insert the name of your server
-		$username = "qm3gykadoio1olv2"; //insert your mysql username
-		$password = "zh1camw074n3jif0"; //insert your password
-		$dbname = "lp4mm7co742xdcep"; //insert your database name
+		$servername = "us-cdbr-east-02.cleardb.com";//insert the name of your server
+		$username = "bd18dcb727a755"; //insert your mysql username
+		$password = "96f30e8c"; //insert your password
+		$dbname = "heroku_12f74203d5ae84d"; //insert your database name
 
 		//establish new connection to mysql database
 		$conn = new mysqli($servername, $username, $password, $dbname);
@@ -37,16 +37,16 @@
 		/*uncomment this block of code if you want to create the table where the emails will be stored, don't bother if you
 		already have the table*/
 
-//  	 	$table = "CREATE TABLE mails (
-//  	 		id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-//  	 		mails VARCHAR(100) NOT NULL
-//  	 )";
+  	 	$table = "CREATE TABLE mails (
+  	 		id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  	 		mails VARCHAR(100) NOT NULL
+  	 )";
 
-//  	 if($conn->query($table) == true) {
-//  	 	echo "Table created";
-//  	 } else {
-//  	 	echo "Error creating " .$conn->error;
-//  	}
+  	 if($conn->query($table) == true) {
+  	 	echo "Table created";
+  	 } else {
+  	 	echo "Error creating " .$conn->error;
+ 	}
 
 		//when the submit button is clicked
 		if(isset($_POST["submit"])) {
