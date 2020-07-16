@@ -1,0 +1,504 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'muli', sans-serif ;
+}
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+body{
+    background-color: #F6F4F2;
+}
+#mainbody{
+    background-color:  #021859;
+    width: 100%;
+    height: 420vh;
+    position: absolute;
+    top: 0%;  50
+    bottom: 50%;
+    animation-name: intro;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+ /* @keyframes intro {
+    0% {top: 50%; bottom: 50%; height: 5vh; }
+    25% {top: 40%; bottom: 40%; height: 30vh;}
+    50% {top: 30%; bottom: 30%; height: 50vh;}
+    75% {top: 20%; bottom: 20%; height: 75vh;}
+    100% {top: 0%; bottom: 0%; height: 100vh;}
+}  */
+
+.text-pack{
+    width: 30% !important;
+}
+.text-head{
+    width:600px !important;
+    font-family: 'lora', sans-serif;
+    font-size: 48px;
+    color: #D9D1B8;
+    line-height: 56px;
+    opacity: 1;  0
+    animation-name: texthead;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+
+}
+/* @keyframes texthead {
+    0% {opacity: 0;}
+    25% {opacity: 0.1;}
+    50% {opacity: 0.3;}
+    75% {opacity: 0.6;}
+    100% {opacity: 1;}
+}  */
+
+.sucess, .error{
+    color: white;
+    font-size: 14px;
+    padding: 15px 10px;
+}
+.absolute{
+    position: absolute;
+}
+.mix-blend{
+    mix-blend-mode: screen;
+}
+
+.moon-img{
+    left: 71.24%;
+    right: 14.07%;
+    top: 0.72%;
+    bottom: 92.4%;
+}
+.star-img{
+    left: 78.34%;
+    right: 17.98%;
+    top: 2.25%;
+    bottom: 94.58%;
+}
+.cloud-one{
+    left: 69.51%;
+    right: 23.76%;
+    top: 5.23%;
+    bottom: 92.15%; 
+}
+.cloud-two{
+    left: 69.89%;
+    right: 19.19%;
+    top: 5.42%;
+    bottom: 91.47%; 
+}
+.cloud-three{
+    left: 73.87%;
+    right: 12.28%;
+    top: 5.57%;
+    bottom: 91.52%;
+}
+.fish-img{
+    position: absolute;
+    /* left: 50%; */
+    top: 13%;
+    bottom: 900px;
+}
+.fish-div{
+     left: 42%;
+    top: 11%;
+    bottom:;
+}
+
+.text-pack{
+    font-family: 'muli', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    animation-name: textpack;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+/* @keyframes textpack {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0.7;}
+    100% {opacity: 1;}
+}  */
+.update{
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+color: #FFFFFF;
+letter-spacing: 0.03em;
+
+/* identical to box height, or 120% */
+}
+
+
+form{
+    opacity: 1;  0
+    animation-name: form;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    margin-left: 0px; -200px
+}
+/* @keyframes form {
+    0% {opacity: 0; }
+    25% {opacity: 0.0;}
+    50% {opacity: 0.0;}
+    75% {opacity: 0.7;}
+    100% {opacity: 1; margin-left: 0px;}
+}  */
+
+.form-container .inpt[type = email]{
+  width: 465px;
+  border: 1px solid #D9D1B8;
+  background-color: #021859;
+  outline: none;
+  border-top-color: #021859;
+  border-left-color: #021859;
+  border-right-color: #021859;
+  color: #D9D1B8;
+}
+
+form  .frm-btn {
+    border-color: #F6F4F2;
+    color: #021859;
+    border-radius: 8px;
+    padding: 16px 40px;
+    font-weight: bolder;
+    outline: none;
+    border-style: none;
+}
+/* form button:hover{
+    background-color: cornsilk;
+    
+} */
+.form-container{
+    padding-bottom: 150px !important;
+    animation-name: form-sect;
+}
+@keyframes form-sect{
+
+}
+.break{
+    background-color: #FFFFFF;
+    height: 400px;
+    animation-name: sect2;
+}
+@keyframes sect2{
+    
+}
+.break-sec{
+    background-color: #FFFFFF;
+    height: 550px;
+    animation-name: sect3;
+    margin-top: -30px !important;
+}
+@keyframes sect3{
+    
+}
+.jumbotron{
+    background-color: #FFFFFF !important;
+    animation-name: jumbo;
+}
+@keyframes jumbo{
+    
+}
+.div-line{
+    background-color: #082359;
+    width: 3px;
+    height: 70px;
+}
+
+.span-div-line{
+    position: relative;
+    left: 100%;
+    bottom: 95px;
+    animation-name: div-line;
+    
+}
+@keyframes div-line{
+    
+}
+
+.span-text{
+    width: 350px;
+    position: absolute;
+    font-size: 18px;
+    line-height: 30px;
+    color: #082359;
+    animation-name: span-text;
+}
+@keyframes span-text{
+    
+}
+.span-text-sec{
+    width: 350px;
+    position: absolute;
+    font-size: 18px;
+    line-height: 30px;
+    color: #082359;
+    /* margin-bottom: 350px !important; */
+    animation-name: span-text-sec;
+}
+@keyframes span-text-sec{
+    
+}
+.lists{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #082359;
+    animation-name: list;
+}
+@keyframes list{
+    
+}
+.span-logo{
+    font-size: 32px;
+     line-height: 48px;
+    color: #082359;
+    position: relative;
+    left: 50%;
+    animation-name: span-logo;
+}
+@keyframes span-logo{
+    
+}
+.form-words{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.label-x{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF  
+}
+form .input{
+    background-color: #8097A6;
+    border-radius: 32px;
+    height: 56px;
+    color: #D9D1B8;
+    font-size: 18px;
+    width: 564px;
+    outline: none;
+    border-style: none;
+    padding-left: 35px;
+    padding-right: 35px;
+    letter-spacing: 0.03em;
+}
+form .input::placeholder{
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #D9D1B8;
+    /* padding-left: 20px; */
+    outline: none;
+    border-style: none;
+}
+form .input-btn{
+    border-color: #F6F4F2;
+    color: #021859;
+    border-radius: 8px;
+    padding: 16px 10px 60px 10px;
+    font-weight: bolder;
+    font-size: 24px;
+    outline: none;
+    border-style: none;
+    width: 335px;
+    height: 62px;
+}
+.heading{
+  
+}
+
+.head-1{
+    font-family: 'lora', sans-serif;
+    font-size: 32px;
+    line-height: 56px;
+    color: #F6F4F2;
+}
+.head-2{
+    font-family: 'muli', sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+ footer{
+    background-color:#F6F4F2;
+    height: 176px;
+    /* height: 180px; */
+    /* width: 100%; */
+    /* position: relative; */
+    /* z-index: 2; */
+}
+.foot-img{
+    background-color: #F6F4F2;
+    padding: 50px 0px;
+}
+.margin-add{
+    margin-left: 110px !important;
+}
+
+
+.hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
+  /* .hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  } */
+  /* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  @keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  
+  }
+  /* Wobble Horizontal */
+@-webkit-keyframes hvr-wobble-horizontal {
+    16.65% {
+      -webkit-transform: translateX(8px);
+      transform: translateX(8px);
+    }
+    33.3% {
+      -webkit-transform: translateX(-6px);
+      transform: translateX(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+    66.6% {
+      -webkit-transform: translateX(-2px);
+      transform: translateX(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateX(1px);
+      transform: translateX(1px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  @keyframes hvr-wobble-horizontal {
+    16.65% {
+      -webkit-transform: translateX(8px);
+      transform: translateX(8px);
+    }
+    33.3% {
+      -webkit-transform: translateX(-6px);
+      transform: translateX(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+    66.6% {
+      -webkit-transform: translateX(-2px);
+      transform: translateX(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateX(1px);
+      transform: translateX(1px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  .hvr-wobble-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+    
+  }
+  .hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
+    -webkit-animation-name: hvr-wobble-horizontal;
+    animation-name: hvr-wobble-horizontal;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+  
+  
+@media screen and (max-width: 1280px) {
+    #mainbody{
+        height: 480vh;
+        position: absolute;
+        top: 0%;  
+        bottom: 50%;
+        animation-name: intro;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }
+    
+}
+@media screen and (min-width: 1500px){
+#mainbody{
+    background-color:  #021859;
+    width: 100%;
+    height: 510vh;
+    position: absolute;
+    top: 0%;  
+    bottom: 50%;
+    animation-name: intro;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+}
+
+
+
+
