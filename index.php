@@ -72,7 +72,7 @@
     }
     ?>
 		<div class="container-fluid  p-0" id="mainbody">
-        <a href="#" class="navbar-brand animate__animated animate__bounce head-logo margin-add mt-5 pl-3 ml-5"><h1 class=""><img src="./assets/images/frame 3.svg" alt="logo.svg" style="background-color: #021859;"></h1></a>
+        <a href="#" class="navbar-brand animate__animated animate__bounce head-logo margin-add mt-5 pl-3 ml-5"><h1 class=""><img src="./assets/images/logo.svg" alt="logo.svg" style="background-color: #021859;"></h1></a>
         
            <div class="container margin-add pt-5 ml-5">
                  <p class="text-head">Create The Perfect Dream You Want And Watch It Happen While You Sleep.</p> <br>
@@ -97,7 +97,7 @@
                     <input class="inpt" type="email" name="email" placeholder="Enter Your Email Address" value="<?php if (isset($email)) {echo $email;} ?>"> <br>
                     <span class="error"><?php if (isset($error)){ echo $error;} ?></span><!-- show errors if any --><br>
                     <button class="animate__animated animate__rollIn mt-4 hvr-pulse-grow  frm-btn" type="submit" name="submit">YES! KEEP ME UPDATED</button>
-                    <span><?php if (isset($responseMsg)) {echo $responseMsg;} ?></span><!-- returns response message -->
+                    <p><?php if (isset($responseMsg)) {echo $responseMsg;} ?></p><!-- returns response message -->
                 </form>
             </div>
             <div class="container-fluid break pb-0">
@@ -180,7 +180,7 @@
                 <input class="input" type="email" name="email" placeholder="we promise you, no spams" value="<?php if (isset($email)) {echo $email;} ?>" > <br>
                 <span class="error"><?php if (isset($error)){ echo $error;} ?></span><!-- show errors if any --><br>
                 <button class="mt-4  hvr-pulse-grow input-btn" type="submit" name="submit">YES! KEEP ME UPDATED</button>
-                <span class="sucess"><?php if (isset($responseMsg)) {echo $responseMsg;} ?></span><!-- returns response message -->
+                <p class="sucess"><?php if (isset($responseMsg)) {echo $responseMsg;} ?></p><!-- returns response message -->
             </form>
             </div>
              
