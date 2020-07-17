@@ -73,7 +73,8 @@
         }
     }
     ?>
-		<div class="container-fluid  p-0" id="mainbody">
+
+<div class="container-fluid  p-0" id="mainbody">
         <a href="#" class="navbar-brand animate__animated animate__bounce head-logo margin-add mt-5 pl-3 ml-5"><h1 class=""><img src="./assets/images/logo.svg" alt="logo.svg" style="background-color: #021859;"></h1></a>
         
               <div class="container margin-add pt-5 ml-5">
@@ -108,13 +109,20 @@
                       <div class="container margin-add  form-container ml-5">
                           <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="POST">
                                <input class="inpt" type="email" name="email" placeholder="Enter Your Email Address" value="<?php if (isset($email)) {echo $email;} ?>"> <br>
-                                  <p class="error"><?php if (isset($error)){ echo $error;} ?></p><br>
+                                  <span class="error"><?php if (isset($error)){ echo $error;} ?></span><br>
                                  <button class=" mt-4 hvr-pulse-grow  frm-btn" type="submit" name="submit">YES! KEEP ME UPDATED</button>
                                      <p class="sucess"><?php if (isset($responseMsg)) {echo $responseMsg;} ?></p>
                              </form>
             </div>
 
-          
+            <!-- <div class="container margin-add  form-container ml-5">
+                <form action="">
+                    <input class="inpt" type="email" name="email" placeholder="Enter Your Email Address" > <br>
+                    <span class="error"></span>show errors if any<br>
+                    <!-- <button class=" mt-4 hvr-pulse-grow  frm-btn" type="submit" name="submit">YES! KEEP ME UPDATED</button> -->
+                    <!-- <span class="sucess"></span>returns response message -->
+                <!-- </form> -->
+            <!-- </div>  -->
             <div class="container-fluid display-on-desk break pb-0">
                     <div class="row">
                         <div class="col-sm-6">
@@ -158,8 +166,6 @@
                               parts of the motor cortex and certain motion-sensing areas deeper in your brain. 
                               During the induction stages of this semi-hypnotic phase,
                              your body become more relaxed and the brain enters changing levels of brain wave pattern. 
-                             The optimal wave pattern is when your brain shows a Theta wave pattern which is from 4 to 8 cycles per second.
-                             This then shows you scenes from the perfect dream you have created. 
                        </div>
                 </div>
 
@@ -179,7 +185,7 @@
                             <span class="span-text-sec mb-5 ">
                                 We developed a tACS system to show you scenes from the perfect dream you designed by triggering parts of the visual cortex, 
                                 parts of the motor cortex and certain motion-sensing areas deeper in your brain.  <br> <br>
-                         <p class="span-text-sec">
+                         <p class="span-text-sec bb">
                            During the induction stages of this semi-hypnotic phase,
                           your body become more relaxed and the brain enters changing levels of brain wave pattern. 
                           The optimal wave pattern is when your brain shows a Theta wave pattern which is from 4 to 8 cycles per second.
@@ -193,7 +199,7 @@
 
              <center><div class="heading pt-5">   
                   <h2 class="head-1 color1 ">What You Should Look Foward To With Dreamland</h2> <br>
-                       <h4 class="head-2 pb-4">Reccord Your Dream Before Sleeping</h4>
+                       <h4 class="head-2 pb-4">Record Your Dream Before Sleeping</h4>
              </div>
              </center>
 
@@ -201,13 +207,13 @@
                 <div class="row row-mob ml-5 pt-5">
                     <div class=" hvr-wobble-horizontal mob-pad-b col-md-4"> <a data-fancybox="gallery" href="./assets/images/big1.png"><img src="./assets/images/small1.png"></a></div>
                     <div class=" hvr-wobble-horizontal mob-pad-b col-md-4"><a data-fancybox="gallery" href="./assets/images/big2.png"><img src="./assets/images/small2.png"></a></div>
-                    <div class=" hvr-wobble-horizontal mob-pad-b col-md-4"><a data-fancybox="gallery" href="./assets/images/big3.png"><img src="./assets/images/small3.png"></a></div>
+                    <div class=" bd hvr-wobble-horizontal mob-pad-b col-md-4"><a data-fancybox="gallery" href="./assets/images/big3.png"><img src="./assets/images/small3.png"></a></div>
                 </div>
                 <h4 class="head-2 pb-4 pt-4 text-center pt-5 pl-0 ml-0 mr-5" >Go To Sleep, Watch It And Capture It</h4>
                 <div class="row row-mob ml-5 pt-4">
                  <div class=" hvr-wobble-horizontal mob-pad-b col-md-4"><a data-fancybox="gallery" href="./assets/images/big4.png"><img src="./assets/images/small4.png"></a></div>
                  <div class=" hvr-wobble-horizontal mob-pad-b col-md-4"><a data-fancybox="gallery" href="./assets/images/big5.png"><img src="./assets/images/small5.png"></a></div>
-                 <div class=" hvr-wobble-horizontal mob-pad-b col-md-4"><a data-fancybox="gallery" href="./assets/images/big6.png"><img src="./assets/images/small6.png"></a></div>
+                 <div class=" bd hvr-wobble-horizontal mob-pad-b col-md-4"><a data-fancybox="gallery" href="./assets/images/big6.png"><img src="./assets/images/small6.png"></a></div>
              </div> 
                     <br> <br> <br> <br>
              <div class="form-words form-word-mob mr-5">
@@ -234,6 +240,6 @@
             
  </div>
 
-    <script src="./assets/javascript/main.js"></script>
+		    <script src="./assets/javascript/main.js"></script>
 </body>
 </html>
