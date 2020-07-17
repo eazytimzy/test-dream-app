@@ -108,7 +108,7 @@
                       <div class="container margin-add  form-container ml-5">
                           <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="POST">
                                <input class="inpt" type="email" name="email" placeholder="Enter Your Email Address" value="<?php if (isset($email)) {echo $email;} ?>"> <br>
-                                  <span class="error"><?php if (isset($error)){ echo $error;} ?></span>show errors if any<br>
+                                  <p class="error"><?php if (isset($error)){ echo $error;} ?></p><br>
                                  <button class=" mt-4 hvr-pulse-grow  frm-btn" type="submit" name="submit">YES! KEEP ME UPDATED</button>
                                      <p class="sucess"><?php if (isset($responseMsg)) {echo $responseMsg;} ?></p>
                              </form>
