@@ -11,26 +11,35 @@ html{
 body{
     background-color: #F6F4F2;
 }
+.display-on-mob{
+  display:none;
+}
+.display-on-desk{
+  display: block;
+}
+.color1{
+  color: #D9D1B8;
+}
 #mainbody{
     background-color:  #021859;
     width: 100%;
-    height: 420vh;
+    height: 20vh;
     position: absolute;
-    top: 0%;  50
+    top: 40%;  
     bottom: 50%;
     animation-name: intro;
-    animation-duration: 3s;
+    animation-duration: 6s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
-}
- /* @keyframes intro {
-    0% {top: 50%; bottom: 50%; height: 5vh; }
-    25% {top: 40%; bottom: 40%; height: 30vh;}
-    50% {top: 30%; bottom: 30%; height: 50vh;}
-    75% {top: 20%; bottom: 20%; height: 75vh;}
-    100% {top: 0%; bottom: 0%; height: 100vh;}
-}  */
-
+ }
+ 
+@keyframes intro {
+  0% {top: 40%; bottom: 50%; height: 5vh; }
+  25% {top: 60%; bottom: 40%; height: 30vh;}
+  50% {top: 30%; bottom: 30%; height: 50vh;}
+  75% {top: 20%; bottom: 20%; height: 75vh;}
+  100% {top: 0%; bottom: 0%; height: 445vh;}
+}  
 .text-pack{
     width: 30% !important;
 }
@@ -40,21 +49,21 @@ body{
     font-size: 48px;
     color: #D9D1B8;
     line-height: 56px;
-    opacity: 1;  0
+    opacity: 0;
+    animation-delay: 2s;
     animation-name: texthead;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 
 }
-/* @keyframes texthead {
+@keyframes texthead {
     0% {opacity: 0;}
     25% {opacity: 0.1;}
     50% {opacity: 0.3;}
     75% {opacity: 0.6;}
     100% {opacity: 1;}
-}  */
-
+} 
 .sucess, .error{
     color: white;
     font-size: 14px;
@@ -66,7 +75,6 @@ body{
 .mix-blend{
     mix-blend-mode: screen;
 }
-
 .moon-img{
     left: 71.24%;
     right: 14.07%;
@@ -107,54 +115,70 @@ body{
      left: 42%;
     top: 11%;
     bottom:;
+    animation-name: fish-div;
+    animation-delay: 7s;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards; 
 }
-
+@keyframes fish-div{
+  0% {opacity: 0;}
+  25% {opacity: 0;}
+  50% {opacity: 0.2;}
+  75% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
 .text-pack{
     font-family: 'muli', sans-serif;
     font-size: 18px;
     line-height: 28px;
     color: #FFFFFF;
     animation-name: textpack;
-    animation-delay: 1s;
-    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-duration: 1ms;
+    opacity: 0;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
-/* @keyframes textpack {
+@keyframes textpack {
     0% {opacity: 0;}
     25% {opacity: 0;}
     50% {opacity: 0;}
-    75% {opacity: 0.7;}
+    75% {opacity: 0;}
     100% {opacity: 1;}
-}  */
+} 
 .update{
-font-weight: bold;
-font-size: 20px;
-line-height: 24px;
-color: #FFFFFF;
-letter-spacing: 0.03em;
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 24px;
+   color: #FFFFFF;
+    letter-spacing: 0.03em;
+   animation-name: textpack;
+    animation-delay: 3s;
+    animation-duration: 4s;
+    opacity: 0;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
 
 /* identical to box height, or 120% */
 }
-
-
 form{
-    opacity: 1;  0
+    opacity: 0;
     animation-name: form;
     animation-delay: 3s;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
-    margin-left: 0px; -200px
+    margin-left: -300px; 
 }
-/* @keyframes form {
+@keyframes form {
     0% {opacity: 0; }
     25% {opacity: 0.0;}
     50% {opacity: 0.0;}
     75% {opacity: 0.7;}
     100% {opacity: 1; margin-left: 0px;}
-}  */
-
+} 
 .form-container .inpt[type = email]{
   width: 465px;
   border: 1px solid #D9D1B8;
@@ -165,7 +189,6 @@ form{
   border-right-color: #021859;
   color: #D9D1B8;
 }
-
 form  .frm-btn {
     border-color: #F6F4F2;
     color: #021859;
@@ -192,11 +215,11 @@ form  .frm-btn {
     animation-name: sect2;
 }
 @keyframes sect2{
-    
+
 }
 .break-sec{
     background-color: #FFFFFF;
-    height: 550px;
+    height: 580px;
     animation-name: sect3;
     margin-top: -30px !important;
 }
@@ -319,10 +342,6 @@ form .input-btn{
     width: 335px;
     height: 62px;
 }
-.heading{
-  
-}
-
 .head-1{
     font-family: 'lora', sans-serif;
     font-size: 32px;
@@ -350,8 +369,6 @@ form .input-btn{
 .margin-add{
     margin-left: 110px !important;
 }
-
-
 .hvr-pulse-grow {
     display: inline-block;
     vertical-align: middle;
@@ -455,9 +472,7 @@ form .input-btn{
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-
-    
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);   
   }
   .hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
     -webkit-animation-name: hvr-wobble-horizontal;
@@ -469,36 +484,158 @@ form .input-btn{
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
   }
-  
-  
 @media screen and (max-width: 1280px) {
     #mainbody{
-        height: 480vh;
-        position: absolute;
-        top: 0%;  
-        bottom: 50%;
+        height: 520vh;
         animation-name: intro;
         animation-duration: 3s;
         animation-fill-mode: forwards;
         animation-timing-function: ease-in;
     }
-    
+    @keyframes intro {
+      0% {top: 40%; bottom: 50%; height: 5vh; }
+      25% {top: 60%; bottom: 40%; height: 30vh;}
+      50% {top: 30%; bottom: 30%; height: 50vh;}
+      75% {top: 20%; bottom: 20%; height: 75vh;}
+      100% {top: 0%; bottom: 0%; height: 500vh;}
+    }   
 }
 @media screen and (min-width: 1500px){
 #mainbody{
-    background-color:  #021859;
-    width: 100%;
-    height: 510vh;
+  height: 550vh;
+  animation-name: intro;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+@keyframes intro {
+  0% {top: 40%; bottom: 50%; height: 5vh; }
+  25% {top: 60%; bottom: 40%; height: 30vh;}
+  50% {top: 30%; bottom: 30%; height: 50vh;}
+  75% {top: 20%; bottom: 20%; height: 75vh;}
+  100% {top: 0%; bottom: 0%; height: 530vh;}
+}  
+form .input-btn{
+  padding: 8px 5px 8px 5px;
+  margin-top:-60px !important;
+  width: 300px;
+}
+}
+@media screen and (max-width: 578px){
+  #mainbody{
+    overflow-x: hidden;
+  }
+  .margin-add{
+    margin-left:20px !important;
+}
+
+.moon-img{
+    left: 50.24%;
+    right: 14.07%;
+    top: 0.72%;
+    bottom: 92.4%;
+}
+.star-img{
+    left: 78.34%;
+    right: 17.98%;
+    top: 2.25%;
+    bottom: 94.58%;
+}
+.cloud-one{
+  display: none; 
+}
+.cloud-two{
+    display: none;
+}
+.cloud-three{
+    display: none;
+}
+.fish-img{
     position: absolute;
-    top: 0%;  
-    bottom: 50%;
-    animation-name: intro;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+    /* left: 50%; */
+    top: 60%;
+    /* bottom: 500px; */
+    width: 300px;
+}
+.fish-div{
+     /* right: 2%; */
+    top: 15%;
+    bottom:;
+    /* right: 800px; */
+    left: 120px;
+    -ms-transform: rotate(320deg);
+  transform: rotate(320deg);  
+}
+.text-head{
+  width:300px !important;
+}
+.update{
+  width: 300px !important;
+  /* margin-top: 35px !important; */
+  margin-bottom: -30px !important;
+}
+.form-container .inpt[type = email]{
+  width: 300px;
+  border: 1px solid #D9D1B8;
+  background-color: #021859;
+  outline: none;
+  border-top-color: #021859;
+  border-left-color: #021859;
+  border-right-color: #021859;
+  color: #D9D1B8;
+}
+.row-mob{
+  margin-left: 0px !important;
+}
+.mob-pad-b{
+  padding-bottom: 30px;
+}
+.head-2{
+  width: 300px;
+  margin-left:0px;
+}
+form .input{
+  width: 300px;
+}
+form .input-btn{
+  padding: 8px 5px 8px 5px;
+  margin-top:-30px !important;
+  width: 290px;
+}
+.heading{
+  margin-top: -100px !important;
+}
+.text-pack-2{
+  width: 80%;
+  font-family: 'muli', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    animation-name: textpack;
+    animation-delay: 2s;
+    animation-duration: 1ms;
+    opacity: 0;
     animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.display-on-mob{
+  display: block;
+}
+.display-on-desk{
+  display: none;
+}
+.we-do{
+  margin-left: 5px !important;
+  width: 90%;
+  padding-bottom: 100px;
+}
+.we-do p{
+  font-size: 32px;
+line-height: 48px;
+font-family: 'lora', sans-serif;
+}
+.we-do div{
+  font-size: 18px;
+line-height: 30px;
 }
 }
-
-
-
-
