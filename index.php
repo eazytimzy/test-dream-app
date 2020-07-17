@@ -110,7 +110,7 @@
                                <input class="inpt" type="email" name="email" placeholder="Enter Your Email Address" value="<?php if (isset($email)) {echo $email;} ?>"> <br>
                                   <span class="error"><?php if (isset($error)){ echo $error;} ?></span>show errors if any<br>
                                  <button class=" mt-4 hvr-pulse-grow  frm-btn" type="submit" name="submit">YES! KEEP ME UPDATED</button>
-                                     <span class="sucess"><?php if (isset($responseMsg)) {echo $responseMsg;} ?></span>returns response message
+                                     <p class="sucess"><?php if (isset($responseMsg)) {echo $responseMsg;} ?></p>
                              </form>
             </div>
 
@@ -218,7 +218,7 @@
                   <input class="input" type="email" name="email" placeholder="we promise you, no spams" value="<?php if (isset($email)) {echo $email;} ?>" > <br>
                     <span class="error"><?php if (isset($error)){ echo $error;} ?></span><!-- show errors if any --><br>
                      <button class="mt-4 pb-5  hvr-pulse-grow input-btn" type="submit" name="submit">YES! KEEP ME UPDATED</button>
-                        <span class="sucess"><?php if (isset($responseMsg)) {echo $responseMsg;} ?></span><!-- returns response message -->
+                        <p class="sucess"><?php if (isset($responseMsg)) {echo $responseMsg;} ?></p><!-- returns response message -->
                  </form>
             </div>
              
